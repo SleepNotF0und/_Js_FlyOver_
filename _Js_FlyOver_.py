@@ -1,29 +1,13 @@
 import requests
+requests.packages.urllib3.disable_warnings()
+
 import random
 import sys
 import re
 from bs4 import BeautifulSoup
 
-#COLORS
-bcolors = {
-    'HEADER' : '\033[95m',
-    'OKBLUE' : '\033[94m',
-    'OKCYAN' : '\033[96m',
-    'OKGREEN' : '\033[92m',
-    'WARNING' : '\033[93m',
-    'FAIL' : '\033[91m',
-    'ENDC' : '\033[0m',
-    'BOLD' : '\033[1m',
-    'UNDERLINE' : '\033[4m'
-}
 
-
-
-
-
-
-
-
+#BANNER
 print("\n           .                                              ")
 print("            \`-.._      .     .    `.              _..-`/  ")
 print("           .'-.._ ``--.._`     `. -- `.      _..-``  _..-`.")
@@ -37,8 +21,6 @@ print("  ||_||/\/|            `-._.'`.    .'-'.' `._.-'           ")
 print(" ()\_/ \_/  _FLY_OVER_         `-....-`                    ")
 print("                                                           ")
 print("  Coded By Hazem Yasser | hackerone.com/0xr3dhunt\n\n")
-
-
 
 
 
@@ -742,10 +724,10 @@ _regex = {
 
 def process_url(url):
     try:
-        Req = requests.get(url, headers=Headers, verify=False, allow_redirects=False, timeout=5)
+        Req = requests.get(url, headers=Headers, verify=False, allow_redirects=True, timeout=10)
         Response = Req.text
         if Req.status_code != 200:
-            print("\n"+ url +" >>>> [ Response Code: " +str(Req.status_code)+" ]")
+            print("\n"+ url +" ~>>>> [ Response Code: " +str(Req.status_code)+" ]")
 
         else:
             Secrets = []
@@ -758,7 +740,7 @@ def process_url(url):
                         Secrets.append("~ " + url + " ====> " + str(reg) + match_str)
                     except Exception as error2:
                         print(error2)
-                        sys.exit(0)
+                        #sys.exit(0)
 
             if len(Secrets) != 0:
                 Final_Result = str("\n" + str(Secrets).replace('"','').replace("'","").replace(']','').replace('[','').replace(',','\n').replace('~ ','\n'))
@@ -767,14 +749,20 @@ def process_url(url):
                 with open("_Js_FlyOver_Results_.txt", "a") as file:
                     file.write(Final_Result + "\n")
 
-    except Exception as error1:
-        print(error1)
-        sys.exit(0)
+    except requests.exceptions.Timeout:
+        print(url+" ====> "+"[Failed Time Out]")
+
+    except requests.exceptions.RequestException:
+        print(url+" ====> "+"[Failed Time Out]")
+
+    except requests.exceptions.HTTPError:
+        print(url+" ====> "+"[Failed Time Out]")
+
 
 
 def main():
     if len(sys.argv) != 2:
-        print("Usage: python3 _Js_FlyOver_.py <<-Js-URLs-FILE->>")
+        print("~>>>> python3 _Js_FlyOver_.py <<-Js-URLs-FILE->>")
         sys.exit(0)
 
     file_path = sys.argv[1]
@@ -788,11 +776,11 @@ def main():
                     process_url(url)
                 
     except FileNotFoundError:
-        print(" >>>> File not found: " + file_path)
+        print("~>>>> File not found: " + file_path)
         sys.exit(0)
 
     except KeyboardInterrupt:
-        print("\n >>>> Exit !?. Exiting gracefully ...")
+        print("\n ~>>>> Exit !?. Exiting gracefully :) ...")
 
 if __name__ == "__main__":
     main()
