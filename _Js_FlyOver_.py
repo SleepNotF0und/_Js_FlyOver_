@@ -760,14 +760,14 @@ def process_url(url):
                         elif "AAAAAAAAAACA4AUD0AADAgAAACAAAAAAAIABAAGABAAEgAUAB" in Filtered_str:
                             pass                                                                                                                                       
                         else:
-                            Secrets.append("~ "+ url +" ====> "+ str(reg) + Filtered_str)
+                            Secrets.append("*"+"~ "+ url +" ====> "+ str(reg) + Filtered_str)
 
                     except Exception as MatchRegex_Error:
                         print(MatchRegex_Error)
                         
 
             if len(Secrets) != 0:
-                Final_Result = str("\n" + str(Secrets).replace('"','').replace("'","").replace(']','').replace('[','').replace(',','\n').replace('~ ','\n'))
+                Final_Result = str("\n" + str(Secrets).replace('"','').replace("'","").replace(']','').replace('[','').replace(',','\n').replace('*','\n'))
                 print(Final_Result)
                 
                 with open("_Js_FlyOver_Results_.txt", "a") as file:
