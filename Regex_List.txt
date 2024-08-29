@@ -1,0 +1,290 @@
+Google API Key
+Artifactory API Token
+Cloudinary API Key
+Firebase API Key
+Email Address
+PGP Private Key Block
+SSH Private Key
+SSH (ssh-ed25519) Public Key
+Amazon AWS Access Key ID
+Amazon MWS Auth Token
+Authorization Bearer Token
+Authorization Basic Credentials
+JWT Token
+Facebook Access Token
+Facebook App ID
+Google Cloud Platform API Key
+Google Cloud Platform OAuth Token
+Windows Live API Key
+Bitcoin Private Key (WIF)
+Ethereum Private Key
+Ripple Secret Key
+Litecoin Private Key (WIF)
+Bitcoin Cash Private Key (WIF)
+Cardano Extended Private Key
+Monero Private Spend Key
+Monero Private View Key
+Zcash Private Key
+Tezos Secret Key
+EOS Private Key
+Stellar Secret Key
+NEO Private Key
+IOTA Seed
+Tron Private Key
+VeChain Private Key
+NEAR Protocol Private Key
+Avalanche Private Key
+Polkadot Private Key
+Chainlink Private Key
+Cosmos Private Key
+Filecoin Private Key
+Algorand Private Key
+Solana Private Key
+Terra Private Key
+Polygon (Matic) Private Key
+Binance Smart Chain Private Key
+Hedera Hashgraph Private Key
+Wanchain Private Key
+Kusama Private Key
+BitShares Private Key
+EOSIO Key
+IOST Private Key
+Harmony (ONE) Private Key
+Ardor Private Key
+Decred Private Key
+Qtum Private Key
+Horizen Private Key
+Ontology Private Key
+Waves Private Key
+Nano Private Key
+IOTEX Private Key
+ICON Private Key
+VeThor Private Key
+Zilliqa Private Key
+Kava Private Key
+Elrond Private Key
+Harmony (ONE) BLS Key
+Celo Private Key
+Flow Private Key
+Stacks (STX) Private Key
+Solana SPL Token Account Address
+Aavegotchi Baazaar NFT Owner
+Decentraland (MANA) Token ID
+Uniswap LP Token
+Curve.fi LP Token
+SushiSwap LP Token
+Balancer LP Token
+1inch LP Token
+Synthetix sUSD LP Token
+Compound cToken Address
+MakerDAO Vault Address
+Yearn Finance Vault Address
+Curve.fi Pool Address
+SushiSwap MasterChef Address
+Uniswap Router Address
+Aave Protocol Address
+Compound Protocol Address
+Synthetix Protocol Address
+Yearn Finance Protocol Address
+Microsoft API Key
+YouTube API Key
+Reddit Client ID
+Instagram Access Token
+Docker Registry Token
+GitLab Personal Access Token
+JIRA API Token
+Azure Key Vault Secret Identifier
+Trello API Key
+Atlassian API Key
+OAuth 2.0 Bearer Token
+Shopify API Key
+Zendesk API Token
+GitLab OAuth Token
+Bitbucket OAuth Token
+Discord OAuth Token
+NPM Token
+Confluence API Token
+CircleCI API Token
+Hootsuite API Token
+Twitch Client ID
+Twitch OAuth Token
+Zendesk OAuth Token
+Salesforce OAuth Token
+Atlassian OAuth Token
+Stripe Connect OAuth Token
+Yammer OAuth Token
+Coinbase OAuth Token
+Microsoft Office 365 API Token
+Pinterest OAuth Token
+Salesforce API Token
+Stripe Connect API Token
+Yammer API Token
+Facebook App Token
+Yelp Fusion API Key
+GitKraken OAuth Token
+Dropbox API Token
+Auth0 API Token
+Okta API Token
+Keybase PGP Key
+HashiCorp Vault Token
+Twilio Auth Token
+SendGrid API Key
+Mixpanel API Key
+AWS Cognito ID Token
+AWS Cognito Refresh Token
+Apache Kafka API Key
+Splunk API Token
+OneLogin API Token
+Auth0 Client Secret
+PubNub API Key
+Fortnite Client ID
+Fortnite Client Secret
+Duo API Key
+Mapbox API Token
+Nordic APIs API Key
+Stoplight API Key
+42Crunch API Key
+Prometheus API Key
+Clarifai API Key
+Twillio API Key
+Quandl API Key
+World Weather Online API Key
+Airtable API Key
+Bitly Generic Access Token
+Dropbox App Key
+Elasticsearch Authentication
+JIRA API Key
+SendinBlue API Key
+Zoho API Key
+Yandex Disk OAuth Token
+Asana Access Token
+Heroku API Key
+Digital Ocean Spaces Access Key
+Buildkite API Token
+Elastic Email API Key
+OpenWeatherMap API Key
+Pusher App Key
+Twilio API Key
+Mandrill API Key
+Intercom API Key
+Vimeo OAuth Token
+Mailgun API Key
+Nexmo API Key
+Spotify Client ID
+Stripe API Key
+Bit.ly Generic Access Token
+Braintree API Key
+Coinbase API Key
+Splunk API Key
+Firebase Cloud Messaging (FCM) Key
+API Token
+Access Token
+Client Secret
+API Secret
+Session Token
+Refresh Token
+Secret Key
+DB Connection String
+Database URL
+Database Password
+Database User
+Database Host
+Database Port
+Bitcoin Private Key (Extended Key)
+Ethereum Private Key (Extended Key)
+Zcash Transparent Address
+Tezos Public Key
+Cardano Extended Public Key
+EOS Account Name
+Stellar Account ID
+NEO Wallet Address
+IOTA Address
+Ripple Address
+SSH Private Key (DSA)
+SSH Private Key (ECDSA)
+SSH Private Key (Ed25519)
+BitLocker Recovery Key
+VeraCrypt Recovery Key
+TrueCrypt Volume Keyfile
+GPG Private Key
+Android Keystore Key
+Windows Credential Manager Entry
+KeePass Database Master Key
+Slack Token
+Git Token
+Tinder API Token
+Jenkins API Token
+PagerDuty Integration Key
+Docker Hub Token
+JFrog Artifactory API Key
+Kubernetes Config File
+Hashicorp Consul Token
+Datadog API Key
+Dynatrace API Token
+New Relic API Key
+Splunk HEC Token
+Puppet Forge API Token
+Azure Service Principal Client Secret
+Azure Storage Account Key
+Azure Cosmos DB Primary Key
+Azure SAS Token
+AWS S3 Access Key
+AWS S3 Secret Key
+AWS Lambda Function Key
+IBM Cloud API Key
+IBM Cloud IAM API Key
+Jupyter Notebook Token
+AWS Elastic Beanstalk API Key
+Google Cloud Service Account Key
+Google Cloud Firestore API Key
+Google Cloud Storage API Key
+Google Cloud Speech API Key
+Google Cloud Vision API Key
+Google Cloud Translation API Key
+Google Cloud Natural Language API Key
+Google Cloud Video Intelligence API Key
+Google Cloud Datastore API Key
+Google Cloud BigQuery API Key
+Google Cloud Dataproc API Key
+Google Cloud Pub/Sub API Key
+Google Cloud Spanner API Key
+Google Cloud Compute Engine API Key
+Google Cloud Dialogflow API Key
+Google Cloud Firebase Realtime Database API Key
+Google Cloud Firebase Cloud Messaging (FCM) API Key
+Google Cloud Firebase Authentication API Key
+Google Cloud Firebase Hosting API Key
+Google Cloud Firebase Test Lab API Key
+Google Cloud Firebase Remote Config API Key
+Google Cloud Firebase In-App Messaging API Key
+Google Cloud Firebase Dynamic Links API Key
+Google Cloud Firebase Realtime Database URL
+Google Cloud Firebase Project ID
+Google Cloud Firebase Storage Bucket
+Google Cloud Firebase Default Cloud Storage Bucket
+Google Cloud Firebase Default Realtime Database Instance
+Google Cloud Firebase Default Cloud Storage Instance
+Google Cloud Firebase Default Cloud Storage Host
+Google Cloud Firebase Default Cloud Storage Base URL
+Google Cloud Firebase Default Cloud Storage Path
+Google Cloud Firebase Default Cloud Storage Requester Pays
+Google Cloud Firebase Default Cloud Storage User Project
+Google Cloud Firebase Default Firestore Project ID
+Google Cloud Firebase Default Firestore Database ID
+Google Cloud Firebase Default Firestore Collection ID
+Google Cloud Firebase Default Firestore Document ID
+Google Cloud Firebase Default Firestore Storage Bucket
+Google Cloud Firebase Default Firestore Host
+Google Cloud Firebase Default Firestore Base URL
+Google Cloud Firebase Default Firestore Path
+Google Cloud Firebase Default Firestore User Project
+Google Cloud Firebase Default Firestore Emulator Host
+Google Cloud Firestore Rules File
+Google Cloud Firestore Indexes File
+Google Cloud Firestore Emulator Rules File
+Google Cloud Firestore Emulator Indexes File
+Google Cloud Firestore Emulator Host
+Google Cloud Firestore Emulator Port
+Google Cloud Firestore Emulator Auto Download
+Google Cloud Firestore Emulator Host and Port
+Google Cloud Pub/Sub Emulator Host
