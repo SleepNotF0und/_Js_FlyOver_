@@ -20,7 +20,7 @@ print("   _ ||  ||         `._     \     ;( O ) /      _.`        ")
 print("  ||_||/\/|            `-._.'`.    .'-'.' `._.-'           ")
 print(" ()\_/ \_/ _FLY_OVER_          `-....-`                    ")
 print("                                                           ")
-print("  Coded By Hazem Yasser | hackerone.com/0xr3dhunt\n\n")
+print("  Coded By Hazem Yasser | hackerone.com/0xr3dhunt\n")
 
 
 
