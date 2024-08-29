@@ -18,7 +18,7 @@ print("     ||   / \   `..-..'    ;       .` `.  '    `..-..`     ")
 print("     ||  |/\/       /      .      : .-. : :       \        ")
 print("   _ ||  ||         `._     \     ;( O ) /      _.`        ")
 print("  ||_||/\/|            `-._.'`.    .'-'.' `._.-'           ")
-print(" ()\_/ \_/  _FLY_OVER_         `-....-`                    ")
+print(" ()\_/ \_/ _FLY_OVER_          `-....-`                    ")
 print("                                                           ")
 print("  Coded By Hazem Yasser | hackerone.com/0xr3dhunt\n\n")
 
@@ -720,14 +720,12 @@ _regex = {
 
 
 
-
-
 def process_url(url):
     try:
         Req = requests.get(url, headers=Headers, verify=False, allow_redirects=True, timeout=10)
         Response = Req.text
         if Req.status_code != 200:
-            print("\n"+ url +" ~>>>> [ Response Code: " +str(Req.status_code)+" ]")
+            print("\n"+ url +"  >>>> [ Response Code: " +str(Req.status_code)+" ]")
 
         else:
             Secrets = []
@@ -736,11 +734,37 @@ def process_url(url):
                 if MatchReg:
                     try:
                         match_str = str(MatchReg).replace('<re.Match object;','').replace('match=','').replace('>','').replace('span=','')
-                        match_str = re.sub(r'\(\d+,\s*\d+\)', '', match_str)  #REMOVE~(6701, 6740)~PATTERNS
-                        Secrets.append("~ " + url + " ====> " + str(reg) + match_str)
-                    except Exception as error2:
-                        print(error2)
-                        #sys.exit(0)
+                        Filtered_str = re.sub(r'\(\d+,\s*\d+\)', '', match_str)  #REMOVE~(6701, 6740)~PATTERNS
+                        
+                        #FALSE~POSITIVE
+                        if "fakeMixpanelToken" in Filtered_str:
+                            pass
+                        elif "gitYear(e)" in Filtered_str:
+                            pass
+                        elif "gitlab.alibaba-inc.com" in Filtered_str:
+                            pass                        
+                        elif "0xfffffffffffffffffffffffffffffffffffffffffffffff" in Filtered_str:
+                            pass
+                        elif "6666666666666666666666666666666666666666666666666" in Filtered_str:
+                            pass
+                        elif "DatadogEventBridge;if(t)return{getAllowedWebViewH" in Filtered_str:
+                            pass
+                        elif "4AHgATAB4AUABQAFAAUABQAFAAUABQAFAAUABQAFAAUABQAFA" in Filtered_str:
+                            pass
+                        elif "9DDAAMAAwADAAMAAwADAAMAAwADAAMAAwADAAMAAwADAAMAAw" in Filtered_str:
+                            pass
+                        elif "EAAQABAAEAAQABAAEAAQABAANAAMAAQABAAIABAAEAAQABAAE" in Filtered_str:
+                            pass
+                        elif "AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" in Filtered_str:
+                            pass
+                        elif "AAAAAAAAAACA4AUD0AADAgAAACAAAAAAAIABAAGABAAEgAUAB" in Filtered_str:
+                            pass                                                                                                                                       
+                        else:
+                            Secrets.append("~ "+ url +" ====> "+ str(reg) + Filtered_str)
+
+                    except Exception as MatchRegex_Error:
+                        print(MatchRegex_Error)
+                        
 
             if len(Secrets) != 0:
                 Final_Result = str("\n" + str(Secrets).replace('"','').replace("'","").replace(']','').replace('[','').replace(',','\n').replace('~ ','\n'))
@@ -762,7 +786,7 @@ def process_url(url):
 
 def main():
     if len(sys.argv) != 2:
-        print("~>>>> python3 _Js_FlyOver_.py <<-Js-URLs-FILE->>")
+        print(" >>>> python3 _Js_FlyOver_.py <<-Js-LINKS-FILE->> / <<-Js-LINK->>")
         sys.exit(0)
 
     file_path = sys.argv[1]
@@ -776,11 +800,15 @@ def main():
                     process_url(url)
                 
     except FileNotFoundError:
-        print("~>>>> File not found: " + file_path)
+        print(" >>>> File not found: " + file_path)
         sys.exit(0)
+    
+    except OSError:
+        if "https" or "http" in file_path:
+            process_url(file_path)
 
     except KeyboardInterrupt:
-        print("\n ~>>>> Exit !?. Exiting gracefully :) ...")
+        print("\n  >>>> Exit !?. Exiting gracefully :) ...")
 
 if __name__ == "__main__":
     main()
