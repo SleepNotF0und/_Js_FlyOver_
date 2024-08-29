@@ -808,7 +808,7 @@ def main():
             process_url(file_path)
 
     except KeyboardInterrupt:
-        print("\n.......Exiting gracefully.......")
+        print("\n                         ....... Exiting Gracefully .......")
 
 if __name__ == "__main__":
     main()
