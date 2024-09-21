@@ -409,6 +409,7 @@ Agents = [
 #RANDOMAIZE~USER~AGENTS
 random_agent = random.choice(Agents)
 
+
 #ADD~CUSTOME~HEADERS~HERE
 Headers = {
     'User-Agent':"'"+ random_agent +"'",
@@ -726,7 +727,6 @@ def process_url(url):
         Response = Req.text
         if Req.status_code != 200:
             print("\n"+ url +"  >>>> [ Response Code: " +str(Req.status_code)+" ]")
-
         else:
             Secrets = []
             for reg in _regex:
@@ -740,6 +740,8 @@ def process_url(url):
                         if "fakeMixpanelToken" in Filtered_str:
                             pass
                         elif "gitYear(e)" in Filtered_str:
+                            pass
+                        elif "map" in Filtered_str:
                             pass
                         elif "gitlab.alibaba-inc.com" in Filtered_str:
                             pass                        
@@ -765,13 +767,15 @@ def process_url(url):
                     except Exception as MatchRegex_Error:
                         print(MatchRegex_Error)
                         
-
             if len(Secrets) != 0:
                 Final_Result = str("\n" + str(Secrets).replace('"','').replace("'","").replace(']','').replace('[','').replace(',','\n').replace('*','\n'))
                 print(Final_Result)
                 
                 with open("_Js_FlyOver_Results_.txt", "a") as file:
                     file.write(Final_Result + "\n")
+                    
+            else:
+                print("\n                         ....... No Secrets Found :( .......")
 
     except requests.exceptions.Timeout:
         print(url+" ====> "+"[Failed Time Out]")
